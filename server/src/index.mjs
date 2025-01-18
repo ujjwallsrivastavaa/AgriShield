@@ -23,7 +23,7 @@ const httpServer = http.createServer(app);
 const corsOptions = {
   origin: [
     process.env.CLIENT_URL,            
-    `https://${process.env.PRODUCTION_CLIENT_URL}`
+    process.env.PRODUCTION_CLIENT_URL
   ],
   credentials: true, 
 };
