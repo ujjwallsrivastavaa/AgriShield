@@ -8,8 +8,8 @@ export default defineConfig({
    
       '/api': {
         target: 'https://agrishield.onrender.com', 
-       
-       
+        changeOrigin: true,
+        secure: true, 
       },
     },
   },
