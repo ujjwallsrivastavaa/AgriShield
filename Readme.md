@@ -3,6 +3,7 @@
 https://agrishield.vercel.app
 
 
+
 ## AgriShield: Empowering Farmers through Technology  
 
 AgriShield is an innovative platform designed to revolutionize the agriculture sector by bridging the gap between farmers and buyers. The solution leverages **AI-driven price prediction models** to forecast crop prices up to 12 months in advance, enabling farmers to make informed decisions about crop selection and planning. 
