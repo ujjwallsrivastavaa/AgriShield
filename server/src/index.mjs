@@ -15,7 +15,7 @@ import http from 'http';
 const port = process.env.PORT || 3000;
 const cookie_secret = process.env.COOKIE_SECRET ;
 const session_secret = process.env.SESSION_SECRET;
-
+const isProduction = process.env.NODE_ENV === 'production';
 
 const app = express();
 const httpServer = http.createServer(app); 
@@ -23,7 +23,7 @@ const httpServer = http.createServer(app);
 const corsOptions = {
   origin: [
     process.env.CLIENT_URL,            
-    process.env.PRODUCTION_CLIENT_URL  
+    process.env.PRODUCTION_CLIENT_URL
   ],
   credentials: true, 
 };
@@ -43,7 +43,9 @@ app.use(
     resave: false,
     cookie: {
       maxAge: 60000 * 60 * 24 * 30,
-      
+      httpOnly: true,
+       secure: process.env.NODE_ENV === 'production', // Only send cookies over HTTPS in production
+       sameSite: process.env.NODE_ENV === 'production' ? 'None' : 'Lax', // Cross-origin cookies in production
     },
     store: MongoStore.create({
       client: mongoose.connection.getClient(),
