@@ -7,9 +7,9 @@ export default defineConfig({
     proxy: {
    
       '/api': {
-        target: 'https://agrishield.onrender.com', 
-        changeOrigin: true,
-        secure: true, 
+        target: 'http://localhost:5001', 
+       
+       
       },
     },
   },
