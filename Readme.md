@@ -16,7 +16,7 @@ https://agrishield.vercel.app
 
 Watch AgriShield in action:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0Azk-UR1WD8" title="AgriShield Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![AgriShield Demo](https://img.youtube.com/vi/0Azk-UR1WD8/0.jpg)](https://www.youtube.com/watch?v=0Azk-UR1WD8)
 
 ## Installation Guide
 
