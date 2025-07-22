@@ -29,12 +29,12 @@ Go to the repository URL and click on the Fork button to create a copy under you
 In your terminal, clone the repository to your local machine:
 
 ```sh
-git clone <your-forked-repository-url>
+git clone https://github.com/ujjwallsrivastavaa/AgriShield
 ```
 ### Navigate to the Project Directory:
 
 ```sh
-cd <project-directory>
+cd AgriShield
 ```
 ### 2. Set Up the Client (Vite)
 
