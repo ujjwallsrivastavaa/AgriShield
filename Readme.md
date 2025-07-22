@@ -10,4 +10,4 @@ By fostering transparency, market stability, and efficiency, AgriShield empowers
 
 ## Live Link
 
-https://agrishield.vercel.app
+https://agrishield.vercel.app 
